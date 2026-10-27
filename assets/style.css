@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('SpaceMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #000000;
+    color: #dcdcdc;
+    line-height: 1.6;
+    padding: 2rem;
+    font-size: 0.8rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+    font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #00c0cc;
+  text-decoration: none;
+  padding: 0 0.1rem;
+  border-radius: 2px;
+}
+
+.blinker {
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+  color: inherit;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
